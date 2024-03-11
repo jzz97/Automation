@@ -1,6 +1,6 @@
 FROM ubuntu 
 RUN apt update 
-RUN apt install apache2 
+RUN apt install apache2 -y
 RUN apt install -y apache2-utils
 COPY index.html /var/www/html
 COPY server.css /var/www/html
